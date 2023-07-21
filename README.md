@@ -2,7 +2,11 @@
 
  Add short description of project here > 
 
-![add image descrition here]![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/e94e80fe-49e3-4684-a2d6-80751e8cdecc)
+The image showcases the Visual Studio Code (VSCode) interface, connected to a Jetson Nano device via SSH. In the VSCode window, three tabs are open:
+1) The first tab displays an image, captured using a webcam.
+2) In the second tab, there is a text-recognition file and it was responsible for extracting text from the captured image.
+3) The third tab shows a summary generated using the contents of the text recognition file.
+![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/e94e80fe-49e3-4684-a2d6-80751e8cdecc)
 
 ## The Algorithm
 
