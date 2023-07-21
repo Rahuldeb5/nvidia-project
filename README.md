@@ -14,18 +14,12 @@ The first file, capture_image.py utilizes the OpenCV library to interact with a 
 ![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/5c76f4f1-150d-40a7-8ece-a29fb3a5a684)
 
 
-
-
 The second file, text_recognition.py involves reading the image, preprocessing it to optimize OCR accuracy, and then utilizing the Pytesseract library to interact with the Tesseract OCR engine to perform the text recognition process. The extracted text is finally saved in a text file.
 ![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/86b9232f-3f74-4829-a63c-868667b50841)
 
 
-
-
 The third file, generate_summary.py uses a pre-trained model from the Transformers library to perform text summarization. It reads input text from a file, processes it through the summarization model, and saves the resulting summary in another file.
 ![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/db230e4c-a707-4841-a7af-80828b8124a8)
-
-
 
 
 ## Running this project
