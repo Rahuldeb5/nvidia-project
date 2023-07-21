@@ -1,6 +1,16 @@
-# nvidia_project
+# TextScan Summary Generator
 
-First, capture_image.py should run. This will generate a new image called capture_image.jpg.
+ Add short description of project here > 
 
-Second, text_recognition.py will be run on capture_image.jpg. 
-This will use text recognition to produce a new file called captured_image.txt
+![add image descrition here]![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/e94e80fe-49e3-4684-a2d6-80751e8cdecc)
+
+## The Algorithm
+
+Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+
+## Running this project
+
+1. Add steps for running this project.
+2. Make sure to include any required libraries that need to be installed for your project to run.
+
+[View a video explanation here](video link)
