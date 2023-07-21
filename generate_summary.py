@@ -16,6 +16,6 @@ def summarize_text(input_file, output_file):
         f.write(summarized_text)
 
 if __name__ == "__main__":
-    input_file = "captured_text.txt"  # Replace with the path to your input text file
+    input_file = "/home/nvidia/my_project/captured_text.txt"  # Replace with the path to your input text file
     output_file = "text_summary.txt"  # Replace with the desired path for the output summary file
     summarize_text(input_file, output_file)
