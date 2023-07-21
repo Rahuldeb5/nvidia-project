@@ -4,33 +4,47 @@ def save_image(image, filename):
     cv2.imwrite(filename, image)
     print(f"Image saved as {filename}")
 
-def capture_single_image():
-    # Open the USB webcam
-    camera = cv2.VideoCapture(0)
+def capture_images():
+    while True:
+        # Open the USB webcam inside the loop to reinitialize for each capture
+        camera = cv2.VideoCapture(0)
 
-    # Check if the camera is opened successfully
-    if not camera.isOpened():
-        print("Error: Unable to access the webcam.")
-        return
+        # Check if the camera is opened successfully
+        if not camera.isOpened():
+            print("Error: Unable to access the webcam.")
+            return
 
-    # Wait for user input (wait for the Enter key to be pressed)
-    input("Press Enter to capture an image: ")
+        # Wait for user input (y or n to continue capturing)
+        user_input = input("Do you want to capture an image? (y/n): ").lower()
 
-    # Capture a frame from the webcam
-    ret, frame = camera.read()
+        if user_input == 'y':
+            # Capture a frame from the webcam
+            ret, frame = camera.read()
 
-    # Check if the frame was captured successfully
-    if not ret:
-        print("Error: Unable to capture image from the webcam.")
-        return
+            # Check if the frame was captured successfully
+            if not ret:
+                print("Error: Unable to capture image from the webcam.")
+                camera.release()  # Release the camera before continuing
+                continue
 
-    # Save the captured frame as a .jpg image file
-    image_filename = "captured_image.jpg"
-    save_image(frame, image_filename)
+            # Specify the full path to save the image inside "/home/nvidia/my_project/"
+            image_filename = "/home/nvidia/my_project/captured_image.jpg"
 
-    # Release the camera
-    camera.release()
+            # Save the captured frame as a .jpg image file (overwriting the same file each time it is run)
+            save_image(frame, image_filename)
+
+        elif user_input == 'n':
+            # Release the camera before exiting the loop
+            camera.release()
+            break
+
+        else:
+            print("Invalid input. Please enter 'y' or 'n'.")
+
+        # Release the camera before continuing to the next iteration
+        camera.release()
+
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    capture_single_image()
+    capture_images()
