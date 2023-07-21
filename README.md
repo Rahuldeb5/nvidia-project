@@ -2,6 +2,7 @@
 
 This project combines image-to-text conversion, text summarization, and digitalize documents This system enables users to extract insights, generate concise summaries, and digitize documents for enhanced productivity and information retrieval.
 
+
 The image showcases the Visual Studio Code (VSCode) interface, connected to a Jetson Nano device via SSH. In the VSCode window, three tabs are open:
 1) The first tab displays an image, captured using a webcam.
 2) In the second tab, there is a text-recognition file and it was responsible for extracting text from the captured image.
