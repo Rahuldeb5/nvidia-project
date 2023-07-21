@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # Specify the filename of the captured image
     image_filename = "/home/nvidia/my_project/captured_image.jpg"
     # Specify the filename for the text output
-    text_filename = "captured_text.txt"
+    text_filename = "/home/nvidia/my_project/captured_text.txt"
 
     # Perform text recognition on the captured image and save the result in the text file
     perform_text_recognition(image_filename, text_filename)
