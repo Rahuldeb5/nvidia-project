@@ -16,14 +16,15 @@ def perform_text_recognition(image_filename, text_filename):
         config='--psm 6'          # Adjust page segmentation mode (PSM)
     )
 
-    # Save the recognized text in a new text file
-    with open(text_filename, 'w', encoding='utf-8') as text_file:
+    # Save the recognized text in a new text file in the specified directory
+    text_file_path = "/home/nvidia/my_project/" + text_filename
+    with open(text_file_path, 'w', encoding='utf-8') as text_file:
         text_file.write(recognized_text)
-    print(f"Recognized text saved in {text_filename}")
+    print(f"Recognized text saved in {text_file_path}")
 
 if __name__ == "__main__":
     # Specify the filename of the captured image
-    image_filename = "captured_image.jpg"
+    image_filename = "/home/nvidia/my_project/captured_image.jpg"
     # Specify the filename for the text output
     text_filename = "captured_text.txt"
 
