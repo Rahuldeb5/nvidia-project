@@ -1,6 +1,6 @@
 # TextScan Summary Generator
 
- Add short description of project here > 
+This project combines image-to-text conversion, text summarization, and digitalize documents This system enables users to extract insights, generate concise summaries, and digitize documents for enhanced productivity and information retrieval.
 
 The image showcases the Visual Studio Code (VSCode) interface, connected to a Jetson Nano device via SSH. In the VSCode window, three tabs are open:
 1) The first tab displays an image, captured using a webcam.
@@ -26,7 +26,7 @@ The third file, generate_summary.py uses a pre-trained model from the Transforme
 
 Steps to run:
 1) Run capture_image.py and input 'y' to capture a frame from the webcam. The frame will be saved in captured_image.jpg.
-2) Run text_recognition.py. This will run text-recognition on captured_image.jpg and save the text to captured_text.txt.
+2) Run text_recognition.py. This will run text recognition on captured_image.jpg and save the text to captured_text.txt.
 3) Run generate_summary.py. This will use the transformers module to summarize the text in captured_text.txt and upload the summary to text_summary.txt.
 
 Required libraries: OpenCV, Tesseract OCR, Pytorch
