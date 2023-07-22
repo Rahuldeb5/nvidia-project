@@ -32,4 +32,4 @@ Steps to run:
 
 Required libraries: CV2, Pytesseract, Transformers
 
-[[[View a video explanation here]([video link](https://youtu.be/1-qha4tH1B0))]
+[View a video explanation here]([video link](https://youtu.be/1-qha4tH1B0))]
