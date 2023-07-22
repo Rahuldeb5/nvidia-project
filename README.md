@@ -30,6 +30,6 @@ Steps to run:
 2) Run text_recognition.py. This will run text recognition on captured_image.jpg and save the text to captured_text.txt.
 3) Run generate_summary.py. This will use the transformers module to summarize the text in captured_text.txt and upload the summary to text_summary.txt.
 
-Required libraries: OpenCV, Tesseract OCR, Pytorch
+Required libraries: CV2, Pytesseract, Transformers
 
 [View a video explanation here](video link)
