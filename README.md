@@ -1,4 +1,4 @@
-![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/9979e9ee-ff90-4e25-9a8d-01f5427325dc)# TextScan Summary Generator
+# TextScan Summary Generator
 
 This project combines image-to-text conversion, text summarization, and digitalize documents This system enables users to extract insights, generate concise summaries, and digitize documents for enhanced productivity and information retrieval.
 
