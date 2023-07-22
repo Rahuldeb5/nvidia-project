@@ -12,15 +12,15 @@ The image showcases the Visual Studio Code (VSCode) interface, connected to a Je
 ## The Algorithm
 
 The first file, capture_image.py utilizes the OpenCV library to interact with a USB webcam and capture images.
-![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/5c76f4f1-150d-40a7-8ece-a29fb3a5a684)
+![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/204c8d4c-1b1b-49b5-8639-e9ae2d9a4887)
 
 
 The second file, text_recognition.py involves reading the image, preprocessing it to optimize OCR accuracy, and then utilizing the Pytesseract library to interact with the Tesseract OCR engine to perform the text recognition process. The extracted text is finally saved in a text file.
-![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/86b9232f-3f74-4829-a63c-868667b50841)
+![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/2e8fa729-1af9-48a4-b80b-bb000a2a3cb2)
 
 
 The third file, generate_summary.py uses a pre-trained model from the Transformers library to perform text summarization. It reads input text from a file, processes it through the summarization model, and saves the resulting summary in another file.
-![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/db230e4c-a707-4841-a7af-80828b8124a8)
+![image](https://github.com/Rahuldeb5/nvidia_project/assets/110701518/d9058b5b-fe97-41be-b474-afbd65202a73)
 
 
 ## Running this project
