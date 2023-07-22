@@ -1,5 +1,10 @@
 import cv2
 
+def set_camera_properties(camera):
+    # Increase brightness and contrast (you can adjust these values as needed)
+    camera.set(cv2.CAP_PROP_BRIGHTNESS, 0.5)
+    camera.set(cv2.CAP_PROP_CONTRAST, 0.5)
+
 def save_image(image, filename):
     cv2.imwrite(filename, image)
     print(f"Image saved as {filename}")
@@ -13,6 +18,9 @@ def capture_images():
         if not camera.isOpened():
             print("Error: Unable to access the webcam.")
             return
+
+        # Set camera properties for better brightness
+        set_camera_properties(camera)
 
         # Wait for user input (y or n to continue capturing)
         user_input = input("Do you want to capture an image? (y/n): ").lower()
@@ -30,7 +38,7 @@ def capture_images():
             # Specify the full path to save the image inside "/home/nvidia/my_project/"
             image_filename = "/home/nvidia/my_project/captured_image.jpg"
 
-            # Save the captured frame as a .jpg image file (overwriting the same file each time it is run)
+            # Save the captured frame as a .jpg image file (overwriting the same file each time)
             save_image(frame, image_filename)
 
         elif user_input == 'n':
